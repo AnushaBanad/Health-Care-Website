@@ -1,0 +1,209 @@
+create a healtcare management website using simple html and tailwind css dont use any react and other frontend framework.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Management</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white border-gray-200 shadow-md">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center">
+                <span class="text-2xl font-semibold text-blue-600">HealthCare</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+                    <li>
+                        <a href="#" class="block py-2 pl-3 pr-4 text-blue-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Home</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Services</a>
+                    </li>
+                    <li>
+                        <a href="#doctors" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Doctors</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-white py-16">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                    <span class="block">Your Health, Our Priority</span>
+                    <span class="block text-blue-600">Modern Healthcare Solutions</span>
+                </h1>
+                <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                    Providing comprehensive healthcare services with cutting-edge technology and compassionate care.
+                </p>
+                <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
+                    <div class="rounded-md shadow">
+                        <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10">
+                            Book Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="py-12 bg-gray-50">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900">Our Services</h2>
+                <p class="mt-4 text-gray-500">Comprehensive healthcare solutions for you and your family</p>
+            </div>
+            <div class="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="text-blue-600 mb-4">
+                        <svg class="h-12 w-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">Primary Care</h3>
+                    <p class="mt-4 text-gray-500">Comprehensive medical care for all ages, including preventive services and chronic disease management.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="text-blue-600 mb-4">
+                        <svg class="h-12 w-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">Specialized Care</h3>
+                    <p class="mt-4 text-gray-500">Expert medical care in various specialties including cardiology, orthopedics, and more.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="text-blue-600 mb-4">
+                        <svg class="h-12 w-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">Emergency Care</h3>
+                    <p class="mt-4 text-gray-500">24/7 emergency medical services with state-of-the-art facilities and experienced staff.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Doctors Section -->
+    <div id="doctors" class="py-12 bg-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900">Our Doctors</h2>
+                <p class="mt-4 text-gray-500">Meet our team of experienced healthcare professionals</p>
+            </div>
+            <div class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Doctor 1 -->
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <img src="/api/placeholder/150/150" alt="Doctor" class="mx-auto rounded-full mb-4">
+                    <h3 class="text-xl font-bold text-gray-900">Dr. Sarah Johnson</h3>
+                    <p class="text-blue-600">Cardiologist</p>
+                    <p class="mt-2 text-gray-500">15+ years of experience in cardiovascular care</p>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <img src="/api/placeholder/150/150" alt="Doctor" class="mx-auto rounded-full mb-4">
+                    <h3 class="text-xl font-bold text-gray-900">Dr. Michael Chen</h3>
+                    <p class="text-blue-600">Orthopedic Surgeon</p>
+                    <p class="mt-2 text-gray-500">12+ years of experience in orthopedic surgery</p>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="bg-gray-50 rounded-lg p-6 text-center">
+                    <img src="/api/placeholder/150/150" alt="Doctor" class="mx-auto rounded-full mb-4">
+                    <h3 class="text-xl font-bold text-gray-900">Dr. Emily Brown</h3>
+                    <p class="text-blue-600">Pediatrician</p>
+                    <p class="mt-2 text-gray-500">10+ years of experience in pediatric care</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="py-12 bg-gray-50">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900">Contact Us</h2>
+                <p class="mt-4 text-gray-500">Get in touch with us for any inquiries</p>
+            </div>
+            <div class="mt-10 max-w-xl mx-auto">
+                <form class="grid grid-cols-1 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" name="name" id="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" name="email" id="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea name="message" id="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">HealthCare</h3>
+                    <p class="text-gray-400">Providing quality healthcare services since 2000</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#doctors" class="text-gray-400 hover:text-white">Doctors</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>123 Healthcare Street</li>
+                        <li>City, State 12345</li>
+                        <li>Phone: (123) 456-7890</li>
+                        <li>Email: info@healthcare.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2024 HealthCare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+</antA
